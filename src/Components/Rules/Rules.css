@@ -1,0 +1,14 @@
+.rules{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 110px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 10px;
+    ul{
+        margin-top:-20px ;
+    }
+}

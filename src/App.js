@@ -1,9 +1,17 @@
-import './App.css';
+import PlayGame from "./Components/PlayGame/PlayGame";
+import StartGame from "./Components/StartGame/StartGame";
 
+import React,{useState} from "react";
 function App() {
+   const [Startgame,setStartgame]=useState(false);
+
+   const Toggle = () => {
+     setStartgame(!Startgame);
+   }
   return (
-    <div className="App">
-     
+    <div>
+      { Startgame ? <PlayGame/> : <StartGame Toggle={Toggle}/> }
+      
     </div>
   );
 }
