@@ -44,13 +44,14 @@ const PlayGame = () => {
       }
 
       if(randomNo === selectedNo){
-
           setScore(score + selectedNo);
       }else if(score > 0){
         setScore(score - 1);
       }
 
-
+      setSelectedNo(undefined);
+      setIsSelected(false);
+      
     } else {
       alert("Please Select Number");
     }
